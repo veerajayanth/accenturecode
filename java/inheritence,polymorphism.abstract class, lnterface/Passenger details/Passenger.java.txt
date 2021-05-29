@@ -1,0 +1,43 @@
+public class Passenger{
+         
+         private int ticketid;
+         private String name,gender,address;
+         
+         
+         
+         public Passenger(int id,String n,String gen,String adr){
+             setTicketid(id);
+            setName(n);
+            setGender(gen);
+            setAddress(adr);
+        }
+        public int getTicketid(){
+            return ticketid;
+        }
+        public void setTicketid(int id){
+            ticketid=id;
+        }
+        public String getName(){
+            return name;
+        }
+        public void setName(String n){
+            name=n;
+        }
+        public String getGender(){
+            return gender;
+        }
+        public void setGender(String gen){
+            gender=gen;
+        }
+        public String getAddress(){
+            return address;
+        }
+        public void setAddress(String adr){
+            address=adr;
+        }
+        public String toString(){
+            
+            String s = "ticketid:"+getTicketid()+",name:"+getName()+",gender:"+getGender()+",address:"+getAddress();
+            return s;
+        }
+    }

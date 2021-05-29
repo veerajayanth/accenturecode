@@ -1,0 +1,47 @@
+public class BusTicket{
+	private int ticketNo;
+	private float ticketPrice;
+	private float totalAmount;
+	private Person person;
+
+	public void setPerson(Person person){
+		this.person=person;
+	}	
+	public void setTicketNo(int ticketNo){
+		this.ticketNo=ticketNo;		
+	}
+	public void setTicketPrice(float ticketPrice){
+		this.ticketPrice=ticketPrice;
+	}
+	public void setTotalAmount(int totalAmount){
+		this.totalAmount=totalAmount;
+	}
+
+	public Person getPerson(){
+		return person;
+	}
+	public int getTicketNo(){
+		return ticketNo;
+	}
+	public float getTicketPrice(){
+		return ticketPrice;
+	}
+	public int getTotalAmount()[
+		return totalAmount;
+	}
+
+	public void calculateTotal(){
+		int age=person.getAge();
+		this.totalAmount=this.ticketPrice;
+
+		if(age<16){
+			this.totalAmount=this.totalAmount/2;
+		}
+		else if(age>=60){
+			this.totalAmount=thos.totalAmount-(this.totalAmount/4);
+		}
+		else if(person.getGender()=='F' || person.getGender()=='f'){
+			this.totalAmount=this.totalAmount-(this.totalAmount/10);
+		}
+	}
+}

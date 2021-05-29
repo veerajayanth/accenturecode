@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class TestMain{
+	public static BusTicket getTicketDetails(){
+		Scanner sc=new Scanner(System.in);
+		BusTicket bs=new BusTicket();
+		Person p=new Person();
+		
+		System.out.println("Enter the passenger name:");
+		p.setName(sc.nextLine());
+		System.out.println("Enter the gender:");
+		p.setGender(sc.next().charAt(0));
+		System.out.println("Enter the age:");
+		p.setAge(sc.nextInt());
+		
+		bs.setPerson(p);		
+
+		System.out.println("Enter the ticket no:");
+		bs.setTicketNo(sc.nextInt());
+		System.out.println("Enter the ticket price:");
+		bs.setTicketPrice(sc.nextFloat());
+		return bs;
+	}
+	public static void main(String[] args){
+		Scanner sm=new Scanner(System.in);
+		BusTicket bs=getTicketDetails();
+		Person p=bs.getPerson();
+
+		System.out.println("Ticket no:"+bs.getTicketNo());
+		System.out.println("Passenger Name:"+p.getName());
+		System.out.println("Price of a ticket:"+bs.getTicketPrice());
+		bs.calcuateTotal();
+		System.out.println("Total Amount:"+bs.getTotalAmount());
+	}
+}

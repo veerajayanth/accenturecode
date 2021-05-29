@@ -1,0 +1,7 @@
+public class Driver{
+  public static void main(String[] args){
+    int a=2,b=2,c=2;
+    Multiplier obj=new Multiplier();
+    System.out.println(obj.multiply(a,b)+"\n"+obj.multiply(a,b,c)+"\n"+multiply(a,b));
+  }
+}

@@ -1,0 +1,8 @@
+public class Driver{
+  public static void main(String[] args){
+    String name="veera";
+    String specialization="surgeon";
+    Doctor obj=new Doctor(name,specialization);
+    System.out.println(obj.displayDetails());
+  }
+}

@@ -1,0 +1,10 @@
+public class Doctor extends Person{
+  string specializationType;
+  Doctor(String name, String specializationType){
+    this.name=name;
+    this.specializationType=specializationType;
+  }
+  public String displayDetails(){
+    return (this.name+" is a "+this.specializationType;
+  }
+}
