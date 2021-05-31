@@ -1,0 +1,1 @@
+insert into customer_info(Customer_ID,Customer_Name,Address,Email) values('C01','Mary','Delhi','mary@gmail.com');
